@@ -9,12 +9,12 @@ import { Ionicons } from '@expo/vector-icons';
 type PredictionCardProps = {
   hypoPrediction: {
     probability: number;
-    timeToEvent: number;
+    timeToEvent: number | null;
     riskLevel: 'low' | 'medium' | 'high';
   };
   hyperPrediction: {
     probability: number;
-    timeToEvent: number;
+    timeToEvent: number | null;
     riskLevel: 'low' | 'medium' | 'high';
   };
   recommendation: string;
@@ -41,12 +41,20 @@ export default function PredictionCard({
     }
   };
   
-  const formatTimeToEvent = (minutes: number) => {
+  const formatTimeToEvent = (minutes: number | null) => {
+    if (minutes === null || minutes === undefined) {
+      return 'N/A';
+    }
+    
+    if (minutes === 0) {
+      return 'Now';
+    }
+    
     if (minutes < 60) {
-      return `${minutes} min`;
+      return `${Math.round(minutes)} min`;
     } else {
       const hours = Math.floor(minutes / 60);
-      const mins = minutes % 60;
+      const mins = Math.round(minutes % 60);
       return `${hours}h ${mins}m`;
     }
   };
@@ -81,7 +89,7 @@ export default function PredictionCard({
             </View>
             
             <View style={styles.timeContainer}>
-              {hypoPrediction.probability > 0.3 ? (
+              {hypoPrediction.probability > 0.3 && hypoPrediction.timeToEvent !== null ? (
                 <>
                   <Ionicons name="time-outline" size={16} color={colors.icon} />
                   <Text style={styles.timeText}>
@@ -118,7 +126,7 @@ export default function PredictionCard({
             </View>
             
             <View style={styles.timeContainer}>
-              {hyperPrediction.probability > 0.3 ? (
+              {hyperPrediction.probability > 0.3 && hyperPrediction.timeToEvent !== null ? (
                 <>
                   <Ionicons name="time-outline" size={16} color={colors.icon} />
                   <Text style={styles.timeText}>
@@ -135,7 +143,7 @@ export default function PredictionCard({
         {/* Recommendation */}
         <View style={styles.recommendationContainer}>
           <Ionicons name="information-circle" size={20} color={Colors.common.info} />
-          <Text style={styles.recommendationText}>{recommendation}</Text>
+          <Text style={styles.recommendationText}>{recommendation || 'No recommendation available.'}</Text>
         </View>
       </Card.Content>
     </Card>

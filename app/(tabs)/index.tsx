@@ -146,26 +146,38 @@ export default function HomeScreen() {
       
       // Get predictions based on timeline data
       if (recentData.timeline && recentData.timeline.length > 0) {
-        // Prepare data for prediction API
-        const predictionData = predictionService.prepareDataForPrediction(recentData.timeline);
-        
-        // Call prediction API
-        const predictionResult = await predictionService.getPredictions(predictionData);
-        
-        // Update prediction state
-        setHypoPrediction({
-          probability: predictionResult.hypo_probability || 0,
-          timeToEvent: predictionResult.time_to_hypo_minutes || 0,
-          riskLevel: (predictionResult.hypo_risk?.toLowerCase() as 'low' | 'medium' | 'high') || 'low'
-        });
-        
-        setHyperPrediction({
-          probability: predictionResult.hyper_probability || 0,
-          timeToEvent: predictionResult.time_to_hyper_minutes || 0,
-          riskLevel: (predictionResult.hyper_risk?.toLowerCase() as 'low' | 'medium' | 'high') || 'low'
-        });
-        
-        setRecommendation(predictionResult.recommendation || 'No recommendation available.');
+        try {
+          // Prepare data for prediction API
+          const predictionData = predictionService.prepareDataForPrediction(recentData.timeline);
+          
+          // Call prediction API
+          const predictionResult = await predictionService.getPredictions(predictionData);
+          
+          // Update prediction state - handling possible null values for time_to_hypo_minutes
+          setHypoPrediction({
+            probability: predictionResult.hypo_probability || 0,
+            timeToEvent: predictionResult.time_to_hypo_minutes !== null ? predictionResult.time_to_hypo_minutes : 0,
+            riskLevel: (predictionResult.hypo_risk?.toLowerCase() as 'low' | 'medium' | 'high') || 'low'
+          });
+          
+          // Update hyper prediction - handling possible null values for time_to_hyper_minutes
+          setHyperPrediction({
+            probability: predictionResult.hyper_probability || 0,
+            timeToEvent: predictionResult.time_to_hyper_minutes !== null ? predictionResult.time_to_hyper_minutes : 0,
+            riskLevel: (predictionResult.hyper_risk?.toLowerCase() as 'low' | 'medium' | 'high') || 'low'
+          });
+          
+          // Update recommendation from prediction
+          setRecommendation(predictionResult.recommendation || 'No recommendation available.');
+          
+          // If we received a current_glucose from prediction, use it as it might be more up-to-date
+          if (predictionResult.current_glucose && !currentGlucose) {
+            setCurrentGlucose(predictionResult.current_glucose);
+          }
+        } catch (predictionError) {
+          console.error('Error getting predictions:', predictionError);
+          // Don't override main error state as this is a secondary operation
+        }
       }
     } catch (err) {
       console.error('Error loading data:', err);

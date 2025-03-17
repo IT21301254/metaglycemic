@@ -771,3 +771,554 @@
 2025-03-17 18:16:12,785 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction ce744ecd-6f4a-404c-97b0-44488d871ea0
 2025-03-17 18:16:13,871 - utils.recommendation - INFO - Received response from recommendation service: 200
 2025-03-17 18:16:13,876 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 40045cda-2f83-49a7-b4dd-1a299f4b09d6
+2025-03-17 18:20:12,231 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:20:12] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:20:12,547 - utils.recommendation - INFO - Using prediction ID: 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:12,549 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81a84ada924da70aa0604
+2025-03-17 18:20:12,550 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:12,550 - utils.recommendation - INFO - Started async thread for prediction 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:12,551 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:20:12] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:20:12,551 - utils.recommendation - INFO - Found existing document for prediction_id 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:12,556 - utils.recommendation - INFO - Updating document with user data for prediction 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:12,557 - utils.recommendation - INFO - Document updated successfully for prediction 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:12,558 - utils.recommendation - INFO - Requesting recommendation for prediction 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:20:18,792 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:20:18,794 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 9551c8d1-8634-43a5-a383-0eb39ccee8a6
+2025-03-17 18:25:12,267 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:25:12] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:25:12,652 - utils.recommendation - INFO - Using prediction ID: d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:12,655 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81bb0ada924da70aa0605
+2025-03-17 18:25:12,656 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:12,656 - utils.recommendation - INFO - Started async thread for prediction d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:12,657 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:25:12] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:25:12,657 - utils.recommendation - INFO - Found existing document for prediction_id d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:12,661 - utils.recommendation - INFO - Updating document with user data for prediction d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:12,662 - utils.recommendation - INFO - Document updated successfully for prediction d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:12,663 - utils.recommendation - INFO - Requesting recommendation for prediction d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:19,328 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:25:19,330 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction d5f6018a-dfab-486a-9fe7-d08320412f28
+2025-03-17 18:25:55,991 - utils.recommendation - INFO - Using prediction ID: 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:25:55,993 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81bdbada924da70aa0606
+2025-03-17 18:25:55,993 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:25:55,993 - utils.recommendation - INFO - Started async thread for prediction 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:25:55,995 - werkzeug - INFO - 127.0.0.1 - - [17/Mar/2025 18:25:55] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:25:55,995 - utils.recommendation - INFO - Found existing document for prediction_id 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:25:55,999 - utils.recommendation - INFO - Updating document with user data for prediction 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:25:56,002 - utils.recommendation - INFO - Document updated successfully for prediction 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:25:56,002 - utils.recommendation - INFO - Requesting recommendation for prediction 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:26:03,191 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:26:03,192 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 3f1a85c0-6690-4f01-a1e3-32571a46a80a
+2025-03-17 18:30:12,293 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:30:12] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:30:12,511 - utils.recommendation - INFO - Using prediction ID: fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:12,513 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81cdcada924da70aa0607
+2025-03-17 18:30:12,514 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:12,514 - utils.recommendation - INFO - Started async thread for prediction fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:12,514 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:30:12] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:30:12,516 - utils.recommendation - INFO - Found existing document for prediction_id fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:12,518 - utils.recommendation - INFO - Updating document with user data for prediction fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:12,519 - utils.recommendation - INFO - Document updated successfully for prediction fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:12,519 - utils.recommendation - INFO - Requesting recommendation for prediction fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:30:18,912 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:30:18,913 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction fa7ef310-6a34-408f-a964-06dc3b78b876
+2025-03-17 18:31:55,435 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:31:55] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:31:55,718 - utils.recommendation - INFO - Using prediction ID: cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:31:55,721 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81d43ada924da70aa0608
+2025-03-17 18:31:55,725 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:31:55,725 - utils.recommendation - INFO - Started async thread for prediction cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:31:55,727 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:31:55] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:31:55,728 - utils.recommendation - INFO - Found existing document for prediction_id cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:31:55,731 - utils.recommendation - INFO - Updating document with user data for prediction cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:31:55,732 - utils.recommendation - INFO - Document updated successfully for prediction cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:31:55,733 - utils.recommendation - INFO - Requesting recommendation for prediction cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:32:03,083 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:32:03,084 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction cc44e447-8199-4689-865a-b45bf8f426bd
+2025-03-17 18:32:27,287 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:32:27] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:32:27,507 - utils.recommendation - INFO - Using prediction ID: 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:27,509 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81d63ada924da70aa0609
+2025-03-17 18:32:27,510 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:27,510 - utils.recommendation - INFO - Started async thread for prediction 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:27,512 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:32:27] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:32:27,512 - utils.recommendation - INFO - Found existing document for prediction_id 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:27,516 - utils.recommendation - INFO - Updating document with user data for prediction 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:27,517 - utils.recommendation - INFO - Document updated successfully for prediction 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:27,517 - utils.recommendation - INFO - Requesting recommendation for prediction 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:32:33,970 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:32:33,972 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 88c55c9b-7455-4a60-9b73-0644a6f9c14b
+2025-03-17 18:34:45,112 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:34:45] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:34:45,325 - utils.recommendation - INFO - Using prediction ID: 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:45,327 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81dedada924da70aa060a
+2025-03-17 18:34:45,328 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:45,328 - utils.recommendation - INFO - Started async thread for prediction 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:45,330 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:34:45] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:34:45,330 - utils.recommendation - INFO - Found existing document for prediction_id 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:45,334 - utils.recommendation - INFO - Updating document with user data for prediction 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:45,335 - utils.recommendation - INFO - Document updated successfully for prediction 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:45,337 - utils.recommendation - INFO - Requesting recommendation for prediction 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:34:51,505 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:34:51,507 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 29217d57-a23f-4550-9d56-9a451837c46f
+2025-03-17 18:35:12,360 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:35:12] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:35:12,601 - utils.recommendation - INFO - Using prediction ID: 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:12,603 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81e08ada924da70aa060b
+2025-03-17 18:35:12,604 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:12,604 - utils.recommendation - INFO - Started async thread for prediction 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:12,606 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:35:12] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:35:12,606 - utils.recommendation - INFO - Found existing document for prediction_id 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:12,610 - utils.recommendation - INFO - Updating document with user data for prediction 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:12,611 - utils.recommendation - INFO - Document updated successfully for prediction 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:12,612 - utils.recommendation - INFO - Requesting recommendation for prediction 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:20,341 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:35:20,342 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 3f72f31c-4510-4cf0-af9e-65d4b3e4ac4b
+2025-03-17 18:35:36,683 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:35:36] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:35:36,825 - utils.recommendation - INFO - Using prediction ID: f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:36,827 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81e20ada924da70aa060c
+2025-03-17 18:35:36,833 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:36,833 - utils.recommendation - INFO - Started async thread for prediction f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:36,834 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:35:36] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:35:36,834 - utils.recommendation - INFO - Found existing document for prediction_id f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:36,838 - utils.recommendation - INFO - Updating document with user data for prediction f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:36,840 - utils.recommendation - INFO - Document updated successfully for prediction f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:36,840 - utils.recommendation - INFO - Requesting recommendation for prediction f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:35:43,575 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:35:43,578 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction f1eebd43-f4b6-48e9-8f3f-5eb648bd7b07
+2025-03-17 18:38:49,509 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:38:49] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:38:49,574 - utils.recommendation - INFO - Using prediction ID: b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:49,576 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81ee1ada924da70aa060d
+2025-03-17 18:38:49,577 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:49,577 - utils.recommendation - INFO - Started async thread for prediction b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:49,584 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:38:49] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:38:49,585 - utils.recommendation - INFO - Found existing document for prediction_id b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:49,587 - utils.recommendation - INFO - Updating document with user data for prediction b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:49,588 - utils.recommendation - INFO - Document updated successfully for prediction b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:49,588 - utils.recommendation - INFO - Requesting recommendation for prediction b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:38:56,289 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:38:56,292 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction b5cdb5eb-b892-4c2f-afb8-8386523b22c8
+2025-03-17 18:39:22,974 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:39:22] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:39:23,124 - utils.recommendation - INFO - Using prediction ID: 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:23,126 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81f03ada924da70aa060e
+2025-03-17 18:39:23,128 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:23,128 - utils.recommendation - INFO - Started async thread for prediction 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:23,130 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:39:23] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:39:23,131 - utils.recommendation - INFO - Found existing document for prediction_id 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:23,139 - utils.recommendation - INFO - Updating document with user data for prediction 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:23,141 - utils.recommendation - INFO - Document updated successfully for prediction 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:23,142 - utils.recommendation - INFO - Requesting recommendation for prediction 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:25,217 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:39:25] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:39:25,368 - utils.recommendation - INFO - Using prediction ID: 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:25,369 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81f05ada924da70aa060f
+2025-03-17 18:39:25,369 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:25,369 - utils.recommendation - INFO - Started async thread for prediction 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:25,371 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:39:25] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:39:25,371 - utils.recommendation - INFO - Found existing document for prediction_id 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:25,376 - utils.recommendation - INFO - Updating document with user data for prediction 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:25,378 - utils.recommendation - INFO - Document updated successfully for prediction 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:25,378 - utils.recommendation - INFO - Requesting recommendation for prediction 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:39:29,244 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:39:29,248 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 3ea18e4a-72a5-49f2-97cf-fec4152d711f
+2025-03-17 18:39:32,391 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:39:32,393 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 0eca7038-e6e6-418b-86f7-a23d7147262a
+2025-03-17 18:40:43,920 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:40:43] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:40:44,053 - utils.recommendation - INFO - Using prediction ID: dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:44,055 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81f54ada924da70aa0610
+2025-03-17 18:40:44,057 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:44,057 - utils.recommendation - INFO - Started async thread for prediction dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:44,059 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:40:44] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:40:44,059 - utils.recommendation - INFO - Found existing document for prediction_id dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:44,063 - utils.recommendation - INFO - Updating document with user data for prediction dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:44,065 - utils.recommendation - INFO - Document updated successfully for prediction dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:44,065 - utils.recommendation - INFO - Requesting recommendation for prediction dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:40:50,183 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:40:50,191 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction dc5840db-cb84-4acc-a6c5-0f1097dd989d
+2025-03-17 18:41:04,142 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:41:04] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:41:04,258 - utils.recommendation - INFO - Using prediction ID: 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:04,260 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81f68ada924da70aa0611
+2025-03-17 18:41:04,261 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:04,261 - utils.recommendation - INFO - Started async thread for prediction 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:04,263 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:41:04] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:41:04,263 - utils.recommendation - INFO - Found existing document for prediction_id 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:04,267 - utils.recommendation - INFO - Updating document with user data for prediction 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:04,268 - utils.recommendation - INFO - Document updated successfully for prediction 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:04,268 - utils.recommendation - INFO - Requesting recommendation for prediction 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:11,039 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:41:11,042 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 8735cfd6-e109-4080-a01d-533b07b23f05
+2025-03-17 18:41:13,570 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:41:13] "[35m[1mPOST /api/glucose HTTP/1.1[0m" 201 -
+2025-03-17 18:41:17,359 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:41:17] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:41:17,491 - utils.recommendation - INFO - Using prediction ID: 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:17,493 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81f75ada924da70aa0612
+2025-03-17 18:41:17,494 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:17,494 - utils.recommendation - INFO - Started async thread for prediction 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:17,495 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:41:17] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:41:17,497 - utils.recommendation - INFO - Found existing document for prediction_id 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:17,500 - utils.recommendation - INFO - Updating document with user data for prediction 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:17,501 - utils.recommendation - INFO - Document updated successfully for prediction 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:17,501 - utils.recommendation - INFO - Requesting recommendation for prediction 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:41:24,340 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:41:24,342 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 6de56ee6-8c93-4f4e-8f92-e572c4403e60
+2025-03-17 18:43:08,874 - utils.recommendation - INFO - Using prediction ID: 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:08,877 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81fe4ada924da70aa0613
+2025-03-17 18:43:08,877 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:08,878 - utils.recommendation - INFO - Started async thread for prediction 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:08,879 - werkzeug - INFO - 127.0.0.1 - - [17/Mar/2025 18:43:08] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:43:08,879 - utils.recommendation - INFO - Found existing document for prediction_id 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:08,883 - utils.recommendation - INFO - Updating document with user data for prediction 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:08,885 - utils.recommendation - INFO - Document updated successfully for prediction 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:08,885 - utils.recommendation - INFO - Requesting recommendation for prediction 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:15,546 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:43:15,548 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 8d92f4ff-79be-4a3b-baa8-d07721c94204
+2025-03-17 18:43:28,544 - utils.recommendation - INFO - Using prediction ID: 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:28,546 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d81ff8ada924da70aa0614
+2025-03-17 18:43:28,546 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:28,547 - utils.recommendation - INFO - Started async thread for prediction 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:28,548 - werkzeug - INFO - 127.0.0.1 - - [17/Mar/2025 18:43:28] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:43:28,548 - utils.recommendation - INFO - Found existing document for prediction_id 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:28,554 - utils.recommendation - INFO - Updating document with user data for prediction 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:28,556 - utils.recommendation - INFO - Document updated successfully for prediction 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:28,557 - utils.recommendation - INFO - Requesting recommendation for prediction 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:43:34,938 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:43:34,940 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 8dbd3d4b-4ddf-4d69-84b9-b6be4ccfc127
+2025-03-17 18:45:43,881 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:45:43] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:45:44,064 - utils.recommendation - INFO - Using prediction ID: d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:44,066 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82080ada924da70aa0615
+2025-03-17 18:45:44,067 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:44,067 - utils.recommendation - INFO - Started async thread for prediction d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:44,068 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:45:44] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:45:44,069 - utils.recommendation - INFO - Found existing document for prediction_id d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:44,074 - utils.recommendation - INFO - Updating document with user data for prediction d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:44,075 - utils.recommendation - INFO - Document updated successfully for prediction d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:44,075 - utils.recommendation - INFO - Requesting recommendation for prediction d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:45:50,485 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:45:50,487 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction d4c10a80-29f0-4d11-9c8b-39c78b692b37
+2025-03-17 18:50:43,911 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:50:43] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:50:43,976 - utils.recommendation - INFO - Using prediction ID: 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:43,978 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d821abada924da70aa0616
+2025-03-17 18:50:43,979 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:43,979 - utils.recommendation - INFO - Started async thread for prediction 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:43,980 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:50:43] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:50:43,980 - utils.recommendation - INFO - Found existing document for prediction_id 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:43,985 - utils.recommendation - INFO - Updating document with user data for prediction 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:43,986 - utils.recommendation - INFO - Document updated successfully for prediction 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:43,987 - utils.recommendation - INFO - Requesting recommendation for prediction 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:50:50,698 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:50:50,700 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 3148be06-c8ca-4bf4-bc51-09e4a5ecd2de
+2025-03-17 18:53:36,642 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:53:36] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 18:53:36,938 - utils.recommendation - INFO - Using prediction ID: 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:36,940 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82258ada924da70aa0617
+2025-03-17 18:53:36,941 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:36,941 - utils.recommendation - INFO - Started async thread for prediction 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:36,942 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 18:53:36] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 18:53:36,943 - utils.recommendation - INFO - Found existing document for prediction_id 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:36,947 - utils.recommendation - INFO - Updating document with user data for prediction 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:36,948 - utils.recommendation - INFO - Document updated successfully for prediction 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:36,948 - utils.recommendation - INFO - Requesting recommendation for prediction 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 18:53:44,201 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 18:53:44,203 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 4d5932fe-6c9a-443b-bb35-e15355fbf852
+2025-03-17 19:00:22,899 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:22] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:00:23,034 - utils.recommendation - INFO - Using prediction ID: f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:23,035 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d823efada924da70aa0618
+2025-03-17 19:00:23,036 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:23,036 - utils.recommendation - INFO - Started async thread for prediction f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:23,038 - utils.recommendation - INFO - Found existing document for prediction_id f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:23,043 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:23] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:00:23,047 - utils.recommendation - INFO - Updating document with user data for prediction f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:23,048 - utils.recommendation - INFO - Document updated successfully for prediction f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:23,048 - utils.recommendation - INFO - Requesting recommendation for prediction f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:32,419 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:32] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:00:32,581 - utils.recommendation - INFO - Using prediction ID: 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:32,582 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d823f8ada924da70aa0619
+2025-03-17 19:00:32,582 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:32,583 - utils.recommendation - INFO - Started async thread for prediction 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:32,583 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:32] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:00:32,584 - utils.recommendation - INFO - Found existing document for prediction_id 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:32,586 - utils.recommendation - INFO - Updating document with user data for prediction 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:32,587 - utils.recommendation - INFO - Document updated successfully for prediction 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:32,587 - utils.recommendation - INFO - Requesting recommendation for prediction 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:33,497 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:00:33,498 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction f0d3aca9-d953-43a2-8020-4b0870a6763d
+2025-03-17 19:00:34,129 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:34] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:00:34,254 - utils.recommendation - INFO - Using prediction ID: 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:34,256 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d823faada924da70aa061a
+2025-03-17 19:00:34,257 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:34,257 - utils.recommendation - INFO - Started async thread for prediction 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:34,258 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:34] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:00:34,259 - utils.recommendation - INFO - Found existing document for prediction_id 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:34,261 - utils.recommendation - INFO - Updating document with user data for prediction 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:34,262 - utils.recommendation - INFO - Document updated successfully for prediction 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:34,262 - utils.recommendation - INFO - Requesting recommendation for prediction 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:37,144 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:37] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:00:37,259 - utils.recommendation - INFO - Using prediction ID: 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:37,261 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d823fdada924da70aa061b
+2025-03-17 19:00:37,262 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:37,262 - utils.recommendation - INFO - Started async thread for prediction 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:37,264 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:37] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:00:37,264 - utils.recommendation - INFO - Found existing document for prediction_id 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:37,269 - utils.recommendation - INFO - Updating document with user data for prediction 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:37,270 - utils.recommendation - INFO - Document updated successfully for prediction 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:37,270 - utils.recommendation - INFO - Requesting recommendation for prediction 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:38,689 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:38] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:00:38,773 - utils.recommendation - INFO - Using prediction ID: 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:38,775 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d823feada924da70aa061c
+2025-03-17 19:00:38,776 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:38,776 - utils.recommendation - INFO - Started async thread for prediction 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:38,778 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:00:38] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:00:38,778 - utils.recommendation - INFO - Found existing document for prediction_id 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:38,782 - utils.recommendation - INFO - Updating document with user data for prediction 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:38,782 - utils.recommendation - INFO - Document updated successfully for prediction 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:38,783 - utils.recommendation - INFO - Requesting recommendation for prediction 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:00:39,241 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:00:39,243 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 66050444-e303-43b1-a280-ab5caf2f6927
+2025-03-17 19:00:40,045 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:00:40,047 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 0f8c04e2-f671-46f3-a159-9a104f609838
+2025-03-17 19:00:43,363 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:00:43,366 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 2d34e188-af37-4e6d-a3f7-4fdfc92840ac
+2025-03-17 19:00:45,093 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:00:45,096 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 9c2dbefa-ccf6-4abf-b041-8fe2f07a51d6
+2025-03-17 19:01:04,609 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:01:04] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:01:04,702 - utils.recommendation - INFO - Using prediction ID: f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:04,704 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82418ada924da70aa061d
+2025-03-17 19:01:04,709 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:04,709 - utils.recommendation - INFO - Started async thread for prediction f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:04,711 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:01:04] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:01:04,712 - utils.recommendation - INFO - Found existing document for prediction_id f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:04,718 - utils.recommendation - INFO - Updating document with user data for prediction f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:04,719 - utils.recommendation - INFO - Document updated successfully for prediction f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:04,720 - utils.recommendation - INFO - Requesting recommendation for prediction f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:11,448 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:01:11,451 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction f8c29136-a4d7-454a-ae14-00badd91333a
+2025-03-17 19:01:12,380 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:01:12] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:01:12,550 - utils.recommendation - INFO - Using prediction ID: a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:12,552 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82420ada924da70aa061e
+2025-03-17 19:01:12,553 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:12,553 - utils.recommendation - INFO - Started async thread for prediction a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:12,554 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:01:12] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:01:12,554 - utils.recommendation - INFO - Found existing document for prediction_id a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:12,557 - utils.recommendation - INFO - Updating document with user data for prediction a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:12,559 - utils.recommendation - INFO - Document updated successfully for prediction a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:12,560 - utils.recommendation - INFO - Requesting recommendation for prediction a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:01:18,994 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:01:18,996 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction a6f7e1ff-197e-46f8-ad3f-1f40697f15b6
+2025-03-17 19:06:42,611 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:06:42] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:06:42,761 - utils.recommendation - INFO - Using prediction ID: 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:42,764 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d8256aada924da70aa061f
+2025-03-17 19:06:42,766 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:42,766 - utils.recommendation - INFO - Started async thread for prediction 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:42,768 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:06:42] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:06:42,769 - utils.recommendation - INFO - Found existing document for prediction_id 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:42,774 - utils.recommendation - INFO - Updating document with user data for prediction 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:42,776 - utils.recommendation - INFO - Document updated successfully for prediction 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:42,776 - utils.recommendation - INFO - Requesting recommendation for prediction 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:06:45,008 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:06:45] "[35m[1mPOST /api/glucose HTTP/1.1[0m" 201 -
+2025-03-17 19:06:52,811 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:06:52,812 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 835be920-439c-415f-b6df-82fe7d2ea2c0
+2025-03-17 19:07:00,362 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:07:00] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:07:00,476 - utils.recommendation - INFO - Using prediction ID: f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:00,479 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d8257cada924da70aa0620
+2025-03-17 19:07:00,480 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:00,480 - utils.recommendation - INFO - Started async thread for prediction f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:00,482 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:07:00] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:07:00,482 - utils.recommendation - INFO - Found existing document for prediction_id f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:00,488 - utils.recommendation - INFO - Updating document with user data for prediction f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:00,490 - utils.recommendation - INFO - Document updated successfully for prediction f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:00,490 - utils.recommendation - INFO - Requesting recommendation for prediction f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:07,162 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:07:07,164 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction f21930d6-6814-4514-a703-67e1c4771599
+2025-03-17 19:07:24,228 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:07:24] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:07:24,380 - utils.recommendation - INFO - Using prediction ID: 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:24,382 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82594ada924da70aa0621
+2025-03-17 19:07:24,382 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:24,383 - utils.recommendation - INFO - Started async thread for prediction 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:24,384 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:07:24] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:07:24,385 - utils.recommendation - INFO - Found existing document for prediction_id 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:24,390 - utils.recommendation - INFO - Updating document with user data for prediction 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:24,393 - utils.recommendation - INFO - Document updated successfully for prediction 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:24,393 - utils.recommendation - INFO - Requesting recommendation for prediction 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:07:31,055 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:07:31,057 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 4c6dddd6-8eb0-463f-b532-94e478384b79
+2025-03-17 19:27:17,352 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:17] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:27:17,558 - utils.recommendation - INFO - Using prediction ID: e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:17,561 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82a3dada924da70aa0622
+2025-03-17 19:27:17,562 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:17,562 - utils.recommendation - INFO - Started async thread for prediction e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:17,564 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:17] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:27:17,566 - utils.recommendation - INFO - Found existing document for prediction_id e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:17,572 - utils.recommendation - INFO - Updating document with user data for prediction e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:17,579 - utils.recommendation - INFO - Document updated successfully for prediction e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:17,580 - utils.recommendation - INFO - Requesting recommendation for prediction e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:22,260 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:22] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:27:22,362 - utils.recommendation - INFO - Using prediction ID: 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:22,365 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82a42ada924da70aa0623
+2025-03-17 19:27:22,367 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:22,368 - utils.recommendation - INFO - Started async thread for prediction 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:22,370 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:22] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:27:22,370 - utils.recommendation - INFO - Found existing document for prediction_id 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:22,376 - utils.recommendation - INFO - Updating document with user data for prediction 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:22,378 - utils.recommendation - INFO - Document updated successfully for prediction 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:22,378 - utils.recommendation - INFO - Requesting recommendation for prediction 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:24,434 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:24] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:27:24,560 - utils.recommendation - INFO - Using prediction ID: 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:24,562 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82a44ada924da70aa0624
+2025-03-17 19:27:24,563 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:24,564 - utils.recommendation - INFO - Started async thread for prediction 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:24,566 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:24] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:27:24,566 - utils.recommendation - INFO - Found existing document for prediction_id 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:24,571 - utils.recommendation - INFO - Updating document with user data for prediction 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:24,573 - utils.recommendation - INFO - Document updated successfully for prediction 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:24,573 - utils.recommendation - INFO - Requesting recommendation for prediction 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:26,139 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:26] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:27:26,204 - utils.recommendation - INFO - Using prediction ID: 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:26,207 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82a46ada924da70aa0625
+2025-03-17 19:27:26,208 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:26,208 - utils.recommendation - INFO - Started async thread for prediction 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:26,209 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:27:26] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:27:26,209 - utils.recommendation - INFO - Found existing document for prediction_id 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:26,214 - utils.recommendation - INFO - Updating document with user data for prediction 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:26,216 - utils.recommendation - INFO - Document updated successfully for prediction 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:26,216 - utils.recommendation - INFO - Requesting recommendation for prediction 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:27:29,291 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:27:29,293 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction e685cf1f-3793-42ba-9b28-19e5191e5665
+2025-03-17 19:27:29,393 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:27:29,395 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 97c45c07-5a13-4398-97fa-684a5bc1f079
+2025-03-17 19:27:31,070 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:27:31,072 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 75b10d95-b6bb-4881-a3e5-daab05385283
+2025-03-17 19:27:32,368 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:27:32,370 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 42392ffa-c843-406d-bcfc-db9d5892dcc0
+2025-03-17 19:30:22,168 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:22] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:30:22,279 - utils.recommendation - INFO - Using prediction ID: 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:22,281 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82af6ada924da70aa0626
+2025-03-17 19:30:22,282 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:22,283 - utils.recommendation - INFO - Started async thread for prediction 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:22,285 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:22] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:30:22,286 - utils.recommendation - INFO - Found existing document for prediction_id 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:22,290 - utils.recommendation - INFO - Updating document with user data for prediction 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:22,292 - utils.recommendation - INFO - Document updated successfully for prediction 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:22,292 - utils.recommendation - INFO - Requesting recommendation for prediction 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:23,954 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:23] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:30:24,017 - utils.recommendation - INFO - Using prediction ID: 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:24,021 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82af8ada924da70aa0627
+2025-03-17 19:30:24,022 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:24,022 - utils.recommendation - INFO - Started async thread for prediction 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:24,025 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:24] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:30:24,025 - utils.recommendation - INFO - Found existing document for prediction_id 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:24,032 - utils.recommendation - INFO - Updating document with user data for prediction 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:24,036 - utils.recommendation - INFO - Document updated successfully for prediction 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:24,036 - utils.recommendation - INFO - Requesting recommendation for prediction 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:25,277 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:25] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:30:25,404 - utils.recommendation - INFO - Using prediction ID: c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:25,406 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82af9ada924da70aa0628
+2025-03-17 19:30:25,407 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:25,407 - utils.recommendation - INFO - Started async thread for prediction c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:25,408 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:25] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:30:25,408 - utils.recommendation - INFO - Found existing document for prediction_id c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:25,412 - utils.recommendation - INFO - Updating document with user data for prediction c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:25,414 - utils.recommendation - INFO - Document updated successfully for prediction c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:25,414 - utils.recommendation - INFO - Requesting recommendation for prediction c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:28,724 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:30:28,726 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 34d57078-6e6b-4216-beef-71c56624cfe8
+2025-03-17 19:30:30,768 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:30:30,771 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 3dc3f682-5902-4920-a0b9-155023886c1b
+2025-03-17 19:30:31,923 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:30:31,925 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction c82054f0-66cf-4430-8c16-acf3f824db0b
+2025-03-17 19:30:36,261 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:36] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:30:36,419 - utils.recommendation - INFO - Using prediction ID: 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:36,421 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82b04ada924da70aa0629
+2025-03-17 19:30:36,422 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:36,423 - utils.recommendation - INFO - Started async thread for prediction 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:36,424 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:30:36] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:30:36,425 - utils.recommendation - INFO - Found existing document for prediction_id 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:36,430 - utils.recommendation - INFO - Updating document with user data for prediction 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:36,432 - utils.recommendation - INFO - Document updated successfully for prediction 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:36,434 - utils.recommendation - INFO - Requesting recommendation for prediction 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:30:42,884 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:30:42,887 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 14d9e5bb-25c9-435f-86e1-68822e4b4d92
+2025-03-17 19:38:03,363 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:38:03] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:38:03,591 - utils.recommendation - INFO - Using prediction ID: d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:03,593 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82cc3ada924da70aa062a
+2025-03-17 19:38:03,594 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:03,595 - utils.recommendation - INFO - Started async thread for prediction d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:03,596 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:38:03] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:38:03,597 - utils.recommendation - INFO - Found existing document for prediction_id d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:03,602 - utils.recommendation - INFO - Updating document with user data for prediction d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:03,604 - utils.recommendation - INFO - Document updated successfully for prediction d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:03,604 - utils.recommendation - INFO - Requesting recommendation for prediction d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:38:13,737 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:38:13,738 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction d93cdfc4-a2a1-48cf-94d1-b0c1562fe3f0
+2025-03-17 19:41:56,337 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:41:56] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:41:56,477 - utils.recommendation - INFO - Using prediction ID: 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:41:56,479 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82dacada924da70aa062b
+2025-03-17 19:41:56,481 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:41:56,481 - utils.recommendation - INFO - Started async thread for prediction 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:41:56,483 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:41:56] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:41:56,483 - utils.recommendation - INFO - Found existing document for prediction_id 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:41:56,490 - utils.recommendation - INFO - Updating document with user data for prediction 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:41:56,492 - utils.recommendation - INFO - Document updated successfully for prediction 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:41:56,493 - utils.recommendation - INFO - Requesting recommendation for prediction 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:42:02,484 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:42:02,487 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 32902100-58a4-4b9b-897d-29044ebe9bb6
+2025-03-17 19:42:57,775 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:42:57] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:42:57,885 - utils.recommendation - INFO - Using prediction ID: e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:42:57,888 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82de9ada924da70aa062c
+2025-03-17 19:42:57,889 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:42:57,889 - utils.recommendation - INFO - Started async thread for prediction e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:42:57,895 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:42:57] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:42:57,896 - utils.recommendation - INFO - Found existing document for prediction_id e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:42:57,901 - utils.recommendation - INFO - Updating document with user data for prediction e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:42:57,902 - utils.recommendation - INFO - Document updated successfully for prediction e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:42:57,902 - utils.recommendation - INFO - Requesting recommendation for prediction e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:43:03,355 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:03] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:43:03,449 - utils.recommendation - INFO - Using prediction ID: ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:03,453 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82defada924da70aa062d
+2025-03-17 19:43:03,454 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:03,454 - utils.recommendation - INFO - Started async thread for prediction ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:03,455 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:03] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:43:03,456 - utils.recommendation - INFO - Found existing document for prediction_id ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:03,461 - utils.recommendation - INFO - Updating document with user data for prediction ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:03,463 - utils.recommendation - INFO - Document updated successfully for prediction ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:03,463 - utils.recommendation - INFO - Requesting recommendation for prediction ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:04,211 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:43:04,214 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction e12eaa23-3c3a-4e77-87fb-9bf0fa6fca42
+2025-03-17 19:43:09,725 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:43:09,727 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction ee136bfe-0246-48d5-bb70-0cbc5ce8f654
+2025-03-17 19:43:11,981 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:11] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:43:12,125 - utils.recommendation - INFO - Using prediction ID: f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:12,128 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82df8ada924da70aa062e
+2025-03-17 19:43:12,129 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:12,129 - utils.recommendation - INFO - Started async thread for prediction f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:12,131 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:12] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:43:12,131 - utils.recommendation - INFO - Found existing document for prediction_id f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:12,136 - utils.recommendation - INFO - Updating document with user data for prediction f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:12,138 - utils.recommendation - INFO - Document updated successfully for prediction f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:12,139 - utils.recommendation - INFO - Requesting recommendation for prediction f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:18,388 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:43:18,390 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction f41f5c07-ab34-40f4-921d-ffdcdc44567c
+2025-03-17 19:43:24,311 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:24] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:43:24,446 - utils.recommendation - INFO - Using prediction ID: 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:24,449 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82e04ada924da70aa062f
+2025-03-17 19:43:24,450 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:24,451 - utils.recommendation - INFO - Started async thread for prediction 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:24,452 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:24] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:43:24,453 - utils.recommendation - INFO - Found existing document for prediction_id 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:24,457 - utils.recommendation - INFO - Updating document with user data for prediction 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:24,459 - utils.recommendation - INFO - Document updated successfully for prediction 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:24,460 - utils.recommendation - INFO - Requesting recommendation for prediction 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:26,205 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:26] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:43:26,321 - utils.recommendation - INFO - Using prediction ID: 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:26,325 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82e06ada924da70aa0630
+2025-03-17 19:43:26,326 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:26,326 - utils.recommendation - INFO - Started async thread for prediction 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:26,328 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:26] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:43:26,329 - utils.recommendation - INFO - Found existing document for prediction_id 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:26,334 - utils.recommendation - INFO - Updating document with user data for prediction 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:26,336 - utils.recommendation - INFO - Document updated successfully for prediction 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:26,336 - utils.recommendation - INFO - Requesting recommendation for prediction 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:30,710 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:43:30,720 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 3e61ef80-2cfd-4957-933d-ad7fb3e63ead
+2025-03-17 19:43:32,449 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:43:32,451 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 76d83b2b-c15b-43f2-a9d5-ac8da9ab9830
+2025-03-17 19:43:37,813 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:37] "GET /api/data/recent HTTP/1.1" 200 -
+2025-03-17 19:43:37,971 - utils.recommendation - INFO - Using prediction ID: 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:37,973 - utils.recommendation - INFO - Created initial recommendation document with ID: 67d82e11ada924da70aa0631
+2025-03-17 19:43:37,974 - utils.recommendation - INFO - Starting fetch_recommendation_async for prediction 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:37,974 - utils.recommendation - INFO - Started async thread for prediction 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:37,975 - werkzeug - INFO - 192.168.8.129 - - [17/Mar/2025 19:43:37] "POST /api/predict HTTP/1.1" 200 -
+2025-03-17 19:43:37,976 - utils.recommendation - INFO - Found existing document for prediction_id 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:37,979 - utils.recommendation - INFO - Updating document with user data for prediction 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:37,981 - utils.recommendation - INFO - Document updated successfully for prediction 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:37,981 - utils.recommendation - INFO - Requesting recommendation for prediction 1407bb3c-bc68-42e4-a3df-a473d803f427
+2025-03-17 19:43:44,444 - utils.recommendation - INFO - Received response from recommendation service: 200
+2025-03-17 19:43:44,446 - utils.recommendation - INFO - Successfully updated document with recommendation for prediction 1407bb3c-bc68-42e4-a3df-a473d803f427

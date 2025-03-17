@@ -26,6 +26,7 @@ export default function GlucoseStatusCard({
     if (value === null) return colors.text;
     if (value < 70) return colors.glucoseLow;
     if (value > 180) return colors.glucoseHigh;
+    if (value > 250) return colors.glucoseVeryHigh;
     return colors.glucoseNormal;
   };
   
@@ -51,8 +52,37 @@ export default function GlucoseStatusCard({
       case 'stable':
         return 'Stable';
       default:
-        return '';
+        return 'Unknown';
     }
+  };
+  
+  const formatTimestamp = (timestamp: string) => {
+    if (!timestamp) return 'Unknown time';
+    
+    // Try to format it nicely if it's recent
+    try {
+      const readingTime = new Date(timestamp);
+      const now = new Date();
+      const diffMs = now.getTime() - readingTime.getTime();
+      const diffMins = Math.floor(diffMs / 60000);
+      
+      if (diffMins < 1) return 'Just now';
+      if (diffMins < 60) return `${diffMins} min ago`;
+      
+      // For older readings, show the full date/time
+      return readingTime.toLocaleString();
+    } catch (err) {
+      // If parsing fails, just return the original string
+      return timestamp;
+    }
+  };
+  
+  const getGlucoseStatus = (value: number | null) => {
+    if (value === null) return '';
+    if (value < 70) return 'Low';
+    if (value > 250) return 'Very High';
+    if (value > 180) return 'High';
+    return 'In Range';
   };
 
   return (
@@ -60,7 +90,7 @@ export default function GlucoseStatusCard({
       <Card.Content>
         <View style={styles.headerRow}>
           <Text style={styles.cardTitle}>Current Glucose</Text>
-          <TouchableOpacity onPress={onLogGlucose} style={styles.refreshButton}>
+          <TouchableOpacity onPress={onLogGlucose} style={styles.addButton}>
             <Ionicons name="add-circle" size={24} color={colors.tint} />
           </TouchableOpacity>
         </View>
@@ -69,9 +99,13 @@ export default function GlucoseStatusCard({
           <>
             <View style={styles.glucoseContainer}>
               <Text style={[styles.glucoseValue, { color: getGlucoseColor(currentGlucose) }]}>
-                {currentGlucose}
+                {Math.round(currentGlucose)}
               </Text>
               <Text style={styles.unit}>mg/dL</Text>
+              
+              <View style={[styles.statusBadge, { backgroundColor: getGlucoseColor(currentGlucose) }]}>
+                <Text style={styles.statusText}>{getGlucoseStatus(currentGlucose)}</Text>
+              </View>
             </View>
             
             <View style={styles.detailsContainer}>
@@ -84,7 +118,7 @@ export default function GlucoseStatusCard({
               
               <View style={styles.timeContainer}>
                 <Ionicons name="time-outline" size={16} color={colors.icon} style={styles.timeIcon} />
-                <Text style={styles.timestamp}>{lastReadingTime}</Text>
+                <Text style={styles.timestamp}>{formatTimestamp(lastReadingTime)}</Text>
               </View>
             </View>
           </>
@@ -121,7 +155,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  refreshButton: {
+  addButton: {
     padding: 4,
   },
   glucoseContainer: {
@@ -129,6 +163,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-end',
     marginVertical: 12,
+    position: 'relative',
   },
   glucoseValue: {
     fontSize: 48,
@@ -138,6 +173,19 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginBottom: 8,
     marginLeft: 4,
+  },
+  statusBadge: {
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    borderRadius: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  statusText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 12,
   },
   detailsContainer: {
     flexDirection: 'row',

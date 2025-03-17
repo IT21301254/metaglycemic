@@ -5,7 +5,9 @@ export const dataService = {
   // Get all recent data for home screen
   getRecentData: async () => {
     try {
-      return await apiClient.get('/data/recent');
+      const response = await apiClient.get('/data/recent');
+      // Return just the data part or the whole response if it is already the data
+      return response.data ? response.data : response;
     } catch (error) {
       console.error('Error fetching recent data:', error);
       throw error;

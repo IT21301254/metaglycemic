@@ -1,5 +1,12 @@
 // services/index.js
-export * from './apiClient';
-export * from './glucoseService';
-export * from './predictionService';
-export * from './dataService';
+import apiClient from './apiClient';
+import { glucoseService } from './glucoseService';
+import { predictionService } from './predictionService';
+import { dataService } from './dataService';
+
+export { 
+  apiClient,
+  glucoseService,
+  predictionService,
+  dataService
+};
