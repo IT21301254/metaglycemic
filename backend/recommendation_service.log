@@ -86,3 +86,13 @@
 2025-03-17 16:11:19,420 - __main__ - INFO - Starting recommendation service on port 5080...
 2025-03-17 16:11:19,439 - werkzeug - WARNING -  * Debugger is active!
 2025-03-17 16:11:19,442 - werkzeug - INFO -  * Debugger PIN: 108-386-736
+2025-03-17 20:54:47,902 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hp\\OneDrive\\Documents\\Kajee\\GlycemicEvents\\GlycemicEventPredictor\\MetaGluco\\backend\\app.py', reloading
+2025-03-17 20:54:48,085 - werkzeug - INFO -  * Restarting with stat
+2025-03-17 20:54:48,774 - __main__ - INFO - Starting recommendation service on port 5080...
+2025-03-17 20:54:48,798 - werkzeug - WARNING -  * Debugger is active!
+2025-03-17 20:54:48,804 - werkzeug - INFO -  * Debugger PIN: 108-386-736
+2025-03-17 20:57:45,507 - werkzeug - INFO -  * Detected change in 'C:\\Users\\hp\\OneDrive\\Documents\\Kajee\\GlycemicEvents\\GlycemicEventPredictor\\MetaGluco\\backend\\app.py', reloading
+2025-03-17 20:57:45,555 - werkzeug - INFO -  * Restarting with stat
+2025-03-17 20:57:45,985 - __main__ - INFO - Starting recommendation service on port 5080...
+2025-03-17 20:57:46,004 - werkzeug - WARNING -  * Debugger is active!
+2025-03-17 20:57:46,009 - werkzeug - INFO -  * Debugger PIN: 108-386-736

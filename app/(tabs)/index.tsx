@@ -152,6 +152,7 @@ export default function HomeScreen() {
           
           // Call prediction API
           const predictionResult = await predictionService.getPredictions(predictionData);
+          console.log("Prediction result received:", predictionResult.prediction_id);
           
           // Update prediction state - handling possible null values for time_to_hypo_minutes
           setHypoPrediction({
@@ -173,6 +174,28 @@ export default function HomeScreen() {
           // If we received a current_glucose from prediction, use it as it might be more up-to-date
           if (predictionResult.current_glucose && !currentGlucose) {
             setCurrentGlucose(predictionResult.current_glucose);
+          }
+          
+          // If we have a prediction_id, try to get the enhanced recommendation after a delay
+          if (predictionResult.prediction_id) {
+            // Wait for the backend to generate the enhanced recommendation
+            setTimeout(async () => {
+              try {
+                console.log("Fetching enhanced recommendation for prediction ID:", predictionResult.prediction_id);
+                const enhancedRecommendation = await predictionService.getEnhancedRecommendation(predictionResult.prediction_id);
+                
+                if (enhancedRecommendation && enhancedRecommendation.recommendation) {
+                  // Update with the enhanced recommendation
+                  console.log("Enhanced recommendation received");
+                  setRecommendation(enhancedRecommendation.recommendation);
+                } else {
+                  console.log("Enhanced recommendation response received but no recommendation found");
+                }
+              } catch (enhancedRecommendationError) {
+                console.log('Could not fetch enhanced recommendation:', enhancedRecommendationError);
+                // Keep using the basic recommendation, no need to update state
+              }
+            }, 3000); // Wait 3 seconds for the async process to complete
           }
         } catch (predictionError) {
           console.error('Error getting predictions:', predictionError);
@@ -251,9 +274,9 @@ export default function HomeScreen() {
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       >
-        <Text style={[styles.greeting, { color: colors.text }]}>
+        {/* <Text style={[styles.greeting, { color: colors.text }]}>
           Good morning!
-        </Text>
+        </Text> */}
         
         {error && (
           <Text style={styles.errorText}>{error}</Text>

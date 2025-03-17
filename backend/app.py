@@ -36,45 +36,103 @@ def health_check():
 
 @app.route('/api/predict', methods=['POST'])
 def predict():
-    """Endpoint to predict glycemic events based on recent data"""
     if request.method == 'POST':
         try:
             data = request.get_json()
             
-            # Extract data from request
-            glucose_readings = data.get('glucose_readings', [])
-            insulin_data = data.get('insulin', {'basal': [], 'bolus': []})
-            carb_data = data.get('carbs', [])
-            activity_data = data.get('activity', [])
-            heart_rate_data = data.get('heart_rate', [])
-            gsr_data = data.get('gsr', [])
+            # Helper function to pad and interpolate data
+            def interpolate_data(input_data, target_length=12):
+                if len(input_data) >= target_length:
+                    return input_data[-target_length:]
+                
+                # If no data, return default
+                if len(input_data) == 0:
+                    return [statistics.mean(input_data) if input_data else 120] * target_length
+                
+                # Linear interpolation to fill missing points
+                interpolated = []
+                for i in range(target_length):
+                    # Calculate the index in the original data
+                    orig_index = (i * len(input_data)) / target_length
+                    
+                    # Get surrounding indices
+                    lower_index = int(orig_index)
+                    upper_index = min(lower_index + 1, len(input_data) - 1)
+                    
+                    # Linear interpolation
+                    if lower_index == upper_index:
+                        interpolated.append(input_data[lower_index])
+                    else:
+                        lower_value = input_data[lower_index]
+                        upper_value = input_data[upper_index]
+                        fraction = orig_index - lower_index
+                        interpolated_value = lower_value + fraction * (upper_value - lower_value)
+                        interpolated.append(interpolated_value)
+                
+                return interpolated
             
-            # Validate input data
-            if len(glucose_readings) < 12:
-                return jsonify({
-                    'error': 'Not enough glucose readings. At least 12 readings (1 hour of data) are required.'
-                }), 400
-            
-            # Call prediction function
-            prediction_result = predict_glucose_events(
-                glucose_readings, 
-                insulin_data,
-                carb_data,
-                activity_data,
-                heart_rate_data,
-                gsr_data
+            # Extract and interpolate data
+            glucose_readings = interpolate_data(
+                data.get('glucose_readings', []), 
+                target_length=12
             )
             
-            # Check if prediction returned an error
-            if 'error' in prediction_result:
-                return jsonify(prediction_result), 500
-                
+            insulin_data = {
+                'basal': interpolate_data(
+                    data.get('insulin', {}).get('basal', []), 
+                    target_length=12
+                ),
+                'bolus': interpolate_data(
+                    data.get('insulin', {}).get('bolus', []), 
+                    target_length=12
+                )
+            }
+            
+            carb_data = interpolate_data(
+                data.get('carbs', []), 
+                target_length=12
+            )
+            
+            activity_data = interpolate_data(
+                data.get('activity', []), 
+                target_length=12
+            )
+            
+            # Use default values if no data
+            heart_rate_data = interpolate_data(
+                data.get('heart_rate', []), 
+                target_length=12
+            ) or [70] * 12
+            
+            gsr_data = interpolate_data(
+                data.get('gsr', []), 
+                target_length=12
+            ) or [1] * 12
+            
+            # Prepare data for model
+            prediction_data = {
+                'glucose_readings': glucose_readings,
+                'insulin': insulin_data,
+                'carbs': carb_data,
+                'activity': activity_data,
+                'heart_rate': heart_rate_data,
+                'gsr': gsr_data
+            }
+            
+            # Process prediction
+            prediction_result = predict_glucose_events(
+                prediction_data['glucose_readings'], 
+                prediction_data['insulin'],
+                prediction_data['carbs'],
+                prediction_data['activity'],
+                prediction_data['heart_rate'],
+                prediction_data['gsr']
+            )
+            
             return jsonify(prediction_result)
             
         except Exception as e:
             return jsonify({'error': str(e)}), 500
-    
-    return jsonify({'error': 'Method not allowed'}), 405
 
 @app.route('/api/glucose', methods=['POST', 'GET'])
 def glucose_endpoint():

@@ -1,9 +1,31 @@
 // services/predictionService.js
 import apiClient from './apiClient';
 
-export const predictionService = {
+const PredictionService = {
+  // Helper method to generate 12 data points
+  generate12Points(entries, defaultValue = 120) {
+    // If no entries or empty array, generate 12 default points
+    if (!entries || entries.length === 0) {
+      return Array(12).fill(defaultValue);
+    }
+
+    // Extract values, handling different entry structures
+    const values = entries.map(entry => 
+      typeof entry === 'object' ? entry.value : entry
+    );
+
+    // If fewer than 12 entries, pad with the last value
+    const paddedValues = [...values];
+    while (paddedValues.length < 12) {
+      paddedValues.push(paddedValues[paddedValues.length - 1]);
+    }
+
+    // Return exactly 12 points, taking the last 12 if more exist
+    return paddedValues.slice(-12);
+  },
+
   // Get predictions based on recent data
-  getPredictions: async (data) => {
+  async getPredictions(data) {
     try {
       const response = await apiClient.post('/predict', data);
       // If response is already the data (due to apiClient interceptor), return it
@@ -11,12 +33,13 @@ export const predictionService = {
       return response.data ? response.data : response;
     } catch (error) {
       console.error('Error getting predictions:', error);
-      throw error;
+      // Return fallback prediction if API call fails
+      return this.getFallbackPrediction();
     }
   },
   
   // Get enhanced recommendation based on prediction ID
-  getEnhancedRecommendation: async (predictionId) => {
+  async getEnhancedRecommendation(predictionId) {
     try {
       const response = await apiClient.get(`/recommendation/${predictionId}`);
       // If response is already the data (due to apiClient interceptor), return it
@@ -28,91 +51,44 @@ export const predictionService = {
     }
   },
 
-  // The rest of your code remains the same
-  prepareDataForPrediction: (recentEntries) => {
-    // Initialize arrays for different data types
-    const glucose_readings = [];
-    const basal = [];
-    const bolus = [];
-    const carbs = [];
-    const activity = [];
-    const heart_rate = [];
-    const gsr = [];
-
-    // Process entries to build arrays
-    recentEntries.forEach(entry => {
-      if (entry.type === 'glucose') {
-        glucose_readings.push(entry.value);
-      } else if (entry.type === 'insulin') {
-        if (entry.insulinType === 'basal') {
-          basal.push(entry.value);
-        } else if (entry.insulinType === 'bolus') {
-          bolus.push(entry.value);
-        }
-      } else if (entry.type === 'meal') {
-        carbs.push(entry.value);
-      } else if (entry.type === 'activity') {
-        // Use duration if available, otherwise use value
-        activity.push(entry.duration || entry.value);
-      }
-    });
-
-    // Ensure arrays have enough elements for the prediction model
-    const ensureLength = (arr, defaultValue = 0, minLength = 3) => {
-      // If array is empty, provide reasonable defaults
-      if (arr.length === 0) {
-        return Array(minLength).fill(defaultValue);
-      }
-      
-      // If array has fewer elements than minLength, pad with the last value
-      // This is better than padding with zeros for time series data
-      while (arr.length < minLength) {
-        arr.push(arr.length > 0 ? arr[arr.length - 1] : defaultValue);
-      }
-      
-      return arr;
-    };
-
-    // Format glucose readings to ensure we have enough data (at least 13 values)
-    // If we don't have any glucose readings, use 120 mg/dL as a reasonable default
-    let formattedGlucoseReadings = glucose_readings.length > 0 
-      ? [...glucose_readings]  // Copy array to avoid mutating original
-      : [120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120];
-    
-    // Ensure we have at least 13 glucose readings as expected by backend
-    while (formattedGlucoseReadings.length < 13) {
-      // If we have some values, repeat the last value
-      if (formattedGlucoseReadings.length > 0) {
-        formattedGlucoseReadings.push(formattedGlucoseReadings[formattedGlucoseReadings.length - 1]);
-      } else {
-        // Otherwise use default value
-        formattedGlucoseReadings.push(120);
-      }
-    }
-
-    // Build the prediction request object in the format expected by the backend
+  // Prepare data for prediction
+  prepareDataForPrediction(recentEntries = []) {
     return {
-      glucose_readings: formattedGlucoseReadings,
+      glucose_readings: this.generate12Points(
+        recentEntries.filter(entry => entry.type === 'glucose')
+      ),
       insulin: {
-        basal: ensureLength(basal),
-        bolus: ensureLength(bolus)
+        basal: this.generate12Points(
+          recentEntries.filter(entry => entry.type === 'insulin' && entry.insulinType === 'basal'),
+          0
+        ),
+        bolus: this.generate12Points(
+          recentEntries.filter(entry => entry.type === 'insulin' && entry.insulinType === 'bolus'),
+          0
+        )
       },
-      carbs: ensureLength(carbs),
-      activity: ensureLength(activity),
-      heart_rate: ensureLength(heart_rate, 70),
-      gsr: ensureLength(gsr, 1)
+      carbs: this.generate12Points(
+        recentEntries.filter(entry => entry.type === 'meal'),
+        0
+      ),
+      activity: this.generate12Points(
+        recentEntries.filter(entry => entry.type === 'activity'),
+        0
+      ),
+      heart_rate: this.generate12Points([], 70),  // Default heart rate
+      gsr: this.generate12Points([], 1)           // Default GSR
     };
   },
   
   // Format risk level based on probability
-  getRiskLevel: (probability) => {
+  getRiskLevel(probability) {
     if (probability < 0.3) return 'low';
     if (probability < 0.7) return 'medium';
     return 'high';
   },
   
   // Create a fallback prediction response if the API fails
-  getFallbackPrediction: (currentGlucose = 120) => {
+  getFallbackPrediction(currentGlucose = 120) {
     const isLow = currentGlucose < 70;
     const isHigh = currentGlucose > 180;
     
@@ -139,3 +115,6 @@ export const predictionService = {
     };
   }
 };
+
+// Export the service object directly
+export const predictionService = PredictionService;
